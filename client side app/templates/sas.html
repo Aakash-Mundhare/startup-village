@@ -1,0 +1,124 @@
+<html>
+<title> WareHouse </title>
+
+<style>
+#bg
+{
+	width:100%;
+	height:50%;
+	background-image:url("{{url_for('static', filename='Images/trial.png')}}");
+	background-size:cover;
+	border-bottom-left-radius:80%;
+	border-bottom-right-radius:80%;
+	box-shadow:0px 10px 20px 0px black;
+}
+#cont
+{
+	width:70%;
+	height:20%;
+	margin-left:15%;
+	margin-top:20%;
+	border-radius:40px;
+	background-color:#333333;
+	box-shadow:0px 10px 20px 0px black;
+}
+#l
+{
+	width:30%;
+	height:100%;
+	background-color: #6B8E23;
+	border-top-left-radius:40px;
+	border-bottom-left-radius:40px;
+}
+#textBox
+{
+	width:100%;
+	height:50px;
+	background-color:lightgray;
+}
+#textBox:hover
+{
+	background-color: white
+}
+#button
+{
+	width:100px;
+	height:100px;
+	margin-top:5%;
+	border-radius:50px;
+	border: 4px outset green;
+	background-color:white;
+	box-shadow:0px 10px 20px 0px black;
+}
+#button:hover
+{
+	border: 4px inset green;
+	background-color: lightgray;
+}
+</style>
+
+<body>
+	<div id=bg><font color=white>
+
+		<a href="http://localhost:5000/ah_home"><img src="{{url_for('static', filename='Images/back1.png')}}" style="height:20px; margin-left:10px; margin-top:10px;"></a>
+
+	<center>
+		<h1 style="box-shadow: 0px 10px 10px -10px black;"> Sell Animal Simen </h1><br>
+		<img src="{{url_for('static', filename='Images/logo_ss.png')}}" style="height:25%; box-shadow: 0px 10px 10px -10px black;">
+	</font></center></div>
+
+<br><br><br>
+
+	<table width=100%>
+		<tr align=center>
+			<td bgcolor= #6B8E23 width=20%>
+				<img src="{{url_for('static', filename='Images/point.png')}}" style="height:20px; margin-top:10px; margin-bottom:10px;">
+			</td><td>
+				<input type=text id=textBox placeholder="     Your Full Name">
+			</td>
+		</tr>
+		<tr align=center>
+			<td bgcolor= #2E8B57 width=20%>
+				<img src="{{url_for('static', filename='Images/point.png')}}" style="height:20px; margin-top:10px; margin-bottom:10px;">
+			</td><td>
+				<input type=text id=textBox placeholder="     Contact Number">
+			</td>
+		</tr>
+		<tr align=center>
+			<td bgcolor= #6B8E23 width=20%>
+				<img src="{{url_for('static', filename='Images/point.png')}}" style="height:20px; margin-top:10px; margin-bottom:10px;">
+			</td><td>
+				<input type=text id=textBox placeholder="     Alternate Number">
+			</td>
+		</tr>
+		<tr align=center>
+			<td bgcolor= #2E8B57 width=20%>
+				<img src="{{url_for('static', filename='Images/point.png')}}" style="height:20px; margin-top:10px; margin-bottom:10px;">
+			</td><td>
+				<input type=text id=textBox placeholder="     State">
+			</td>
+		</tr>
+		<tr align=center>
+			<td bgcolor= #6B8E23 width=20%>
+				<img src="{{url_for('static', filename='Images/point.png')}}" style="height:20px; margin-top:10px; margin-bottom:10px;">
+			</td><td>
+				<input type=text id=textBox placeholder="     District">
+			</td>
+		</tr>
+		<tr align=center>
+			<td bgcolor= #2E8B57 width=20%>
+				<img src="{{url_for('static', filename='Images/point.png')}}" style="height:20px; margin-top:10px; margin-bottom:10px;">
+			</td><td>
+				<input type=text id=textBox placeholder="     Pin Code">
+			</td>
+		</tr>
+	</table>
+
+	<center><input type=submit value=Submit id=button></center>
+				
+
+
+<br>
+	<center><font color=#444444><h4> Home | Animal Husbandry | Sell Animal Simen </h2></font></center>
+</body>
+</html>

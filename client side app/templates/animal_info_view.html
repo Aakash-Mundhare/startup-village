@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form action="http://localhost:5000/animal_info_view" method="post" name="frm">
+	animal type : <input type="text" name="animal_type"><br><br>
+	gender : <select name="gender"><br><br>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select><br><br>
+	<input type="submit" name="submit_btn">
+</form><br><br>
+{% if results%}
+<table>
+<tr>
+<td>animal type | <br><br></td>
+<td>animal age | <br><br></td>
+<td>gender | <br><br></td>
+<td>semen potency | <br><br></td>
+<td>is diseased | <br><br></td>
+<td>husbandry | <br><br></td>
+</tr>
+{% for i in results %}
+<tr>
+<td>{{i[0]}}</td>
+<td>{{i[1]}}</td>
+<td>{{i[2]}}</td>
+<td>{{i[3]}}</td>
+<td>{{i[4]}}</td>
+<td>{{i[5]}}</td>
+</tr>
+{% endfor %}
+</table>
+{% endif %}
+</body>
+</html>

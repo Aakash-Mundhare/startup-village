@@ -1,0 +1,39 @@
+<html>
+<title> Confirmation </title>
+
+<style>
+#header
+{
+	width:100%;
+	height:15%;
+	background-color: #2E8B57;
+	border-bottom:4px solid white;
+}
+#start
+{
+	width:50%;
+	margin-top:15%;
+	box-shadow: 0 10px 10px -5px black;
+}
+#person
+{
+	width:50%;
+	margin-top:10%;
+	margin-bottom:10%;
+}
+#cancle
+{
+	width:15%;
+	box-shadow: 0 10px 10px -5px black;
+}
+</style>
+
+<body bgcolor=#333333><center>
+
+	<div id=header><img src="{{url_for('static', filename='Images/c_1.png')}}" style="height:90%"></div>
+
+	<a href="http://localhost:5000/hc_home"><img src="{{url_for('static', filename='Images/con1.png')}}" id=start></a>
+	<div id=person><img src="{{url_for('static', filename='Images/con3.png')}}" style="width:90%; margin-top:5%;"></div>
+	<a href="http://localhost:5000/HomePage"><img src="{{url_for('static', filename='Images/con3.png')}}" id=cancle></a>
+</center></body>
+</html>

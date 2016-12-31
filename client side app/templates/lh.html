@@ -1,0 +1,78 @@
+<html>
+<title> WareHouse </title>
+
+<style>
+#bg
+{
+	width:100%;
+	height:50%;
+	background-image:url("{{url_for('static', filename='Images/trial.png')}}");
+	background-size:cover;
+	border-bottom-left-radius:80%;
+	border-bottom-right-radius:80%;
+	box-shadow:0px 10px 20px 0px black;
+}
+#cont
+{
+	width:70%;
+	height:20%;
+	margin-left:15%;
+	margin-top:20%;
+	border-radius:40px;
+	background-color:#333333;
+	box-shadow:0px 10px 20px 0px black;
+}
+#l
+{
+	width:30%;
+	height:100%;
+	background-color: #6B8E23;
+	border-top-left-radius:40px;
+	border-bottom-left-radius:40px;
+}
+#textBox
+{
+	width:100%;
+	height:100px;
+	background-color:lightgray;
+}
+#textBox:hover
+{
+	background-color: white
+}
+#button
+{
+	width:200px;
+	height:200px;
+	margin-top:5%;
+	border-radius:100px;
+	border: 6px outset green;
+	background-color:white;
+	box-shadow:0px 10px 20px 0px black;
+}
+#button:hover
+{
+	border: 6px inset green;
+	background-color: lightgray;
+}
+</style>
+
+<body>
+	<div id=bg><font color=white>
+
+		<a href="http://localhost:5000/ah_home"><img src="{{url_for('static', filename='Images/back1.png')}}" style="height:20px; margin-left:10px; margin-top:10px;"></a>
+
+	<center>
+		<h1 style="box-shadow: 0px 10px 10px -10px black;"> Locate Husbandry </h1><br>
+		<img src="{{url_for('static', filename='Images/logo_lh.png')}}" style="height:25%; box-shadow: 0px 10px 10px -10px black;">
+	</font></center></div>
+
+<br><br>
+
+	<img src="{{url_for('static', filename='Images/map.jpg')}}" style="width:100%; border-top:30px solid #222222; border-bottom:30px solid #222222;">
+
+
+<br>
+	<center><font color=#444444><h4> Home | Animal Husbandry | Locate Husbandry </h2></font></center>
+</body>
+</html>

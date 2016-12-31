@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<table>
+<tr>
+<td>comtact detail | <br><br></td>
+<td>location | <br><br></td>
+</tr>
+{% for i in results %}
+<tr>
+<td>{{i[0]}}</td>
+<td>{{i[1]}}</td>
+</tr>
+{% endfor %}
+</table>
+</body>
+</html>

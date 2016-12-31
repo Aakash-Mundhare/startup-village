@@ -1,0 +1,23 @@
+<html>
+<head>
+<script>
+function myFunction() {
+    window.location="http://localhost:5000/HomePage";
+}
+</script>
+<title>Splash Screen</title>
+</head>
+
+<style>
+	#bg
+	{
+		width : 100%;
+		height : 100%;
+		position : fixed;
+	}
+</style>
+
+<body onload="setTimeout(myFunction, 3000)">
+	<img id=bg src="{{url_for('static', filename='Images/SplashScreen.png')}}">
+</body>
+</html>

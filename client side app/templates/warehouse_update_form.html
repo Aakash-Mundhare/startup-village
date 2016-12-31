@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form action="http://localhost:5000/warehouse_update_form" method="post" name="frm">
+	warehouse_name : <input type="text" name="warehouse_name"><br><br>
+	<input type="submit" name="submit_btn">
+</form><br><br>
+{% if results%}
+<form action="http://localhost:5000/warehouse_update_form" method="post" name="frm">
+	crop availibility : <input type="text" name="crop_avail"><br><br>
+	crop quantity : <input type="text" name="crop_qty"><br><br>
+	crop price : <input type="text" name="crop_price"><br><br>
+	<input type="submit" name="submit_btn">
+</form>
+{% if count==1 %}
+<h2>no such warehouse found</h2>
+{% endif %}
+{% endif %}
+</body>
+</html>
